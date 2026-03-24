@@ -27,11 +27,11 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5  # v4
 
       # Runs a single command using the runners shell
       - name: NCTL-scan-installer
-        uses: supplypike/setup-bin@v4
+        uses: supplypike/setup-bin@8e3f88b4f143d9b5c3497f0fc12d45c83c123787  # v4
         with:
           uri: 'https://nirmata-downloads.s3.us-east-2.amazonaws.com/nctl/nctl_4.3.5/nctl_4.3.5_linux_386.zip'
           name: 'nctl'
